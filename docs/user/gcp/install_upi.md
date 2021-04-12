@@ -236,7 +236,7 @@ openshift-vw9j6
 ```sh
 export BASE_DOMAIN='example.com'
 export BASE_DOMAIN_ZONE_NAME='example'
-export NETWORK_CIDR='10.0.0.0/16'
+export NETWORK_CIDR='10.210.0.0/16'
 export MASTER_SUBNET_CIDR='10.0.0.0/17'
 export WORKER_SUBNET_CIDR='10.0.128.0/17'
 
@@ -425,7 +425,7 @@ EOF
 - `infra_id`: the infrastructure name (INFRA_ID above)
 - `region`: the region to deploy the cluster into (for example us-east1)
 - `cluster_network`: the URI to the cluster network
-- `network_cidr`: the CIDR of the vpc network (for example 10.0.0.0/16)
+- `network_cidr`: the CIDR of the vpc network (for example 10.210.0.0/16)
 
 Create the deployment using gcloud.
 

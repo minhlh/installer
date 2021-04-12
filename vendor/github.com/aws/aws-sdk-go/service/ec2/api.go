@@ -27136,7 +27136,7 @@ func (c *EC2) EnableVpcClassicLinkRequest(input *EnableVpcClassicLinkInput) (req
 // your ClassicLink-enabled VPC to allow communication over private IP addresses.
 // You cannot enable your VPC for ClassicLink if any of your VPC route tables
 // have existing routes for address ranges within the 10.0.0.0/8 IP address
-// range, excluding local routes for VPCs in the 10.0.0.0/16 and 10.1.0.0/16
+// range, excluding local routes for VPCs in the 10.210.0.0/16 and 10.1.0.0/16
 // IP address ranges. For more information, see ClassicLink (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html)
 // in the Amazon Elastic Compute Cloud User Guide.
 //
@@ -50550,7 +50550,7 @@ type CreateVpcInput struct {
 	// CIDR block.
 	AmazonProvidedIpv6CidrBlock *bool `locationName:"amazonProvidedIpv6CidrBlock" type:"boolean"`
 
-	// The IPv4 network range for the VPC, in CIDR notation. For example, 10.0.0.0/16.
+	// The IPv4 network range for the VPC, in CIDR notation. For example, 10.210.0.0/16.
 	//
 	// CidrBlock is a required field
 	CidrBlock *string `type:"string" required:"true"`

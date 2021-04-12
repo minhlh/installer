@@ -2784,7 +2784,7 @@ type AddOutputRequest struct {
 
 	// The range of IP addresses that should be allowed to initiate output requests
 	// to this flow. These IP addresses should be in the form of a Classless Inter-Domain
-	// Routing (CIDR) block; for example, 10.0.0.0/16.
+	// Routing (CIDR) block; for example, 10.210.0.0/16.
 	CidrAllowList []*string `locationName:"cidrAllowList" type:"list"`
 
 	// A description of the output. This description appears only on the AWS Elemental
@@ -5120,7 +5120,7 @@ type SetSourceRequest struct {
 
 	// The range of IP addresses that should be allowed to contribute content to
 	// your source. These IP addresses should be in the form of a Classless Inter-Domain
-	// Routing (CIDR) block; for example, 10.0.0.0/16.
+	// Routing (CIDR) block; for example, 10.210.0.0/16.
 	WhitelistCidr *string `locationName:"whitelistCidr" type:"string"`
 }
 
@@ -5258,7 +5258,7 @@ type Source struct {
 
 	// The range of IP addresses that should be allowed to contribute content to
 	// your source. These IP addresses should be in the form of a Classless Inter-Domain
-	// Routing (CIDR) block; for example, 10.0.0.0/16.
+	// Routing (CIDR) block; for example, 10.210.0.0/16.
 	WhitelistCidr *string `locationName:"whitelistCidr" type:"string"`
 }
 
@@ -5616,7 +5616,7 @@ type Transport struct {
 
 	// The range of IP addresses that should be allowed to initiate output requests
 	// to this flow. These IP addresses should be in the form of a Classless Inter-Domain
-	// Routing (CIDR) block; for example, 10.0.0.0/16.
+	// Routing (CIDR) block; for example, 10.210.0.0/16.
 	CidrAllowList []*string `locationName:"cidrAllowList" type:"list"`
 
 	// The smoothing max bitrate for RIST, RTP, and RTP-FEC streams.
@@ -6102,7 +6102,7 @@ type UpdateFlowOutputInput struct {
 
 	// The range of IP addresses that should be allowed to initiate output requests
 	// to this flow. These IP addresses should be in the form of a Classless Inter-Domain
-	// Routing (CIDR) block; for example, 10.0.0.0/16.
+	// Routing (CIDR) block; for example, 10.210.0.0/16.
 	CidrAllowList []*string `locationName:"cidrAllowList" type:"list"`
 
 	// A description of the output. This description appears only on the AWS Elemental
@@ -6333,7 +6333,7 @@ type UpdateFlowSourceInput struct {
 
 	// The range of IP addresses that should be allowed to contribute content to
 	// your source. These IP addresses should be in the form of a Classless Inter-Domain
-	// Routing (CIDR) block; for example, 10.0.0.0/16.
+	// Routing (CIDR) block; for example, 10.210.0.0/16.
 	WhitelistCidr *string `locationName:"whitelistCidr" type:"string"`
 }
 

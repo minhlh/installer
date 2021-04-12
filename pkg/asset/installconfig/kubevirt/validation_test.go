@@ -32,7 +32,7 @@ var (
 	invalidAPIVIP         = "invalid-api-vip"
 	invalidIngressVIP     = "invalid-ingress-vip"
 	invalidAccessMode     = "invalid-access-mode"
-	invalidMachineCIDR    = "10.0.0.0/16"
+	invalidMachineCIDR    = "10.210.0.0/16"
 	namespaceStruct       = &corev1.Namespace{}
 	kubeMacPoolLabels     = map[string]string{"mutatevirtualmachines.kubemacpool.io": "allocate"}
 	hcoNamespace          = "openshift-cnv"

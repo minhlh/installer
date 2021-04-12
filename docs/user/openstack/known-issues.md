@@ -24,7 +24,7 @@ If your external network's CIDR range is the same as one of the default network 
 
 ```txt
 machineNetwork:
-- cidr: "10.0.0.0/16"
+- cidr: "10.210.0.0/16"
 serviceNetwork:
 - "172.30.0.0/16"
 clusterNetwork:

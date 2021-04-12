@@ -50,7 +50,7 @@ func TestInstallConfigGenerate_FillsInDefaults(t *testing.T) {
 		BaseDomain: "test-domain",
 		Networking: &types.Networking{
 			MachineNetwork: []types.MachineNetworkEntry{
-				{CIDR: *ipnet.MustParseCIDR("10.0.0.0/16")},
+				{CIDR: *ipnet.MustParseCIDR("10.210.0.0/16")},
 			},
 			NetworkType:    "OpenShiftSDN",
 			ServiceNetwork: []ipnet.IPNet{*ipnet.MustParseCIDR("172.30.0.0/16")},
@@ -116,7 +116,7 @@ pullSecret: "{\"auths\":{\"example.com\":{\"auth\":\"authorization value\"}}}"
 				BaseDomain: "test-domain",
 				Networking: &types.Networking{
 					MachineNetwork: []types.MachineNetworkEntry{
-						{CIDR: *ipnet.MustParseCIDR("10.0.0.0/16")},
+						{CIDR: *ipnet.MustParseCIDR("10.210.0.0/16")},
 					},
 					NetworkType:    "OpenShiftSDN",
 					ServiceNetwork: []ipnet.IPNet{*ipnet.MustParseCIDR("172.30.0.0/16")},
@@ -202,7 +202,7 @@ network:
 				BaseDomain: "test-domain",
 				Networking: &types.Networking{
 					MachineNetwork: []types.MachineNetworkEntry{
-						{CIDR: *ipnet.MustParseCIDR("10.0.0.0/16")},
+						{CIDR: *ipnet.MustParseCIDR("10.210.0.0/16")},
 					},
 					NetworkType:    "OpenShiftSDN",
 					ServiceNetwork: []ipnet.IPNet{*ipnet.MustParseCIDR("172.30.0.0/16")},

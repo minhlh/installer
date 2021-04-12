@@ -13,7 +13,7 @@
   "variables" : {
     "location" : "[resourceGroup().location]",
     "virtualNetworkName" : "[concat(parameters('baseName'), '-vnet')]",
-    "addressPrefix" : "10.0.0.0/16",
+    "addressPrefix" : "10.210.0.0/16",
     "masterSubnetName" : "[concat(parameters('baseName'), '-master-subnet')]",
     "masterSubnetPrefix" : "10.0.0.0/24",
     "nodeSubnetName" : "[concat(parameters('baseName'), '-worker-subnet')]",

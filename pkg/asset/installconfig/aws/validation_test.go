@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	validCIDR = "10.0.0.0/16"
+	validCIDR = "10.210.0.0/16"
 )
 
 func validInstallConfig() *types.InstallConfig {

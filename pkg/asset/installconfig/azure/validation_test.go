@@ -29,7 +29,7 @@ var (
 	resourcesCapableRegionsList    = []string{"centralus", "westus"}
 	validComputeSubnet             = "valid-compute-subnet"
 	validControlPlaneSubnet        = "valid-controlplane-subnet"
-	validCIDR                      = "10.0.0.0/16"
+	validCIDR                      = "10.210.0.0/16"
 	validComputeSubnetCIDR         = "10.0.0.0/24"
 	validControlPlaneSubnetCIDR    = "10.0.32.0/24"
 	validResourceGroupNamespace    = "Microsoft.Resources"

@@ -25,7 +25,7 @@ func validNetworking() *types.Networking {
 	return &types.Networking{
 		NetworkType: "OpenShiftSDN",
 		MachineNetwork: []types.MachineNetworkEntry{{
-			CIDR: *ipnet.MustParseCIDR("10.0.0.0/16"),
+			CIDR: *ipnet.MustParseCIDR("10.210.0.0/16"),
 		}},
 	}
 }

@@ -26,7 +26,7 @@ var (
 	validZone          = "us-east1-b"
 	validComputeSubnet = "valid-compute-subnet"
 	validCPSubnet      = "valid-controlplane-subnet"
-	validCIDR          = "10.0.0.0/16"
+	validCIDR          = "10.210.0.0/16"
 
 	invalidateMachineCIDR = func(ic *types.InstallConfig) {
 		_, newCidr, _ := net.ParseCIDR("192.168.111.0/24")

@@ -42,7 +42,7 @@ The following `install-config.yaml` properties are available:
         For example, 24 would allocate 2^8=256 adresses to each node. If this field is not used by the plugin, it can be left unset.
     * `machineNetwork` (optional array of objects): The IP address pools for machines.
         * `cidr` (required [IP network](#ip-networks)): The IP block address pool.
-            The default is 10.0.0.0/16 for all platforms other than libvirt.
+            The default is 10.210.0.0/16 for all platforms other than libvirt.
             For libvirt, the default is 192.168.126.0/24.
     * `networkType` (optional string): The type of network to install.
         The default is [OpenShiftSDN][openshift-sdn].
@@ -66,7 +66,7 @@ The following `install-config.yaml` properties are available:
 ### IP networks
 
 IP networks are represented as strings using [Classless Inter-Domain Routing (CIDR) notation][cidr-notation] with a traditional IP address or network number, followed by the "/" (slash) character, followed by a decimal value between 0 and 32 that describes the number of significant bits.
-For example, 10.0.0.0/16 represents IP addresses 10.0.0.0 through 10.0.255.255.
+For example, 10.210.0.0/16 represents IP addresses 10.0.0.0 through 10.0.255.255.
 
 ### Machine pools
 
@@ -145,7 +145,7 @@ networking:
   - cidr: 10.128.0.0/14
     hostPrefix: 23
   machineNetwork:
-  - cidr: 10.0.0.0/16
+  - cidr: 10.210.0.0/16
   networkType: OpenShiftSDN
   serviceNetwork:
   - 172.30.0.0/16
